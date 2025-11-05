@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Du-Black Borracharia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">DB</div>
+        <div>
+          <h1>Du-Black Borracharia</h1>
+          <p class="tag">Seu socorro rápido em pneus e rodas</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <button id="menuToggle" aria-label="Abrir menu" class="hamburger">☰</button>
+        <ul class="nav-list" id="navList">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#agendamento">Agendamento</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-content card">
+        <h2>Pronto para rodar de novo?</h2>
+        <p>Atendimento rápido, troca de pneus, alinhamento, balanceamento e reparos. Atendimento móvel disponível.</p>
+        <div class="cta">
+          <a class="btn" href="#agendamento">Agendar agora</a>
+          <a class="btn ghost" href="#galeria">Ver galeria</a>
+        </div>
+        <ul class="features">
+          <li>Troca de Pneu</li>
+          <li>Balanceamento</li>
+          <li>Alinhamento</li>
+          <li>Atendimento Móvel</li>
+        </ul>
+      </div>
+      <div class="hero-aside card">
+        <h3>Horário de funcionamento</h3>
+        <p class="muted">Segunda a Sexta: <strong>08:00 — 18:00</strong><br>Sábado: <strong>08:00 — 12:00</strong></p>
+        <p class="muted">Limite por dia: <strong>10 agendamentos</strong></p>
+        <div class="contact-box">
+          <div>Telefone/WhatsApp</div>
+          <a class="whatsapp-link" id="topWpp" href="#">(81) 98494-8307</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="container card section">
+      <h3>Serviços</h3>
+      <div class="services-grid">
+        <article class="service"><i>🔧</i>
+          <h4>Troca de Pneus e remendos</h4>
+          <p>Rápido e seguro</p>
+        </article>
+        <article class="service"><i>⚖️</i>
+          <h4>Vulcanização Carro e Moto</h4>
+          <p>Borracha Resistente e Durável</p>
+        </article>
+
+        <article class="service"><i>🚗</i>
+          <h4>Atendimento Móvel 24h</h4>
+          <p>Vamos até você</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="galeria" class="container card section">
+      <h3>Galeria</h3>
+      <div class="gallery-grid">
+        <img src="https://picsum.photos/seed/pneu1/600/400" alt="pneu1">
+        <img src="https://picsum.photos/seed/pneu2/600/400" alt="pneu2">
+        <img src="https://picsum.photos/seed/pneu3/600/400" alt="pneu3">
+
+      </div>
+    </section>
+
+    <section id="agendamento" class="container card section">
+      <h3>Agende seu atendimento</h3>
+      <form id="formContato" class="form-grid" novalidate>
+        <label><span>Nome</span><input type="text" id="nome" required placeholder="Seu nome completo"></label>
+        <label><span>Telefone</span><input type="tel" id="telefone" required placeholder="11988887777"></label>
+        <label><span>Data</span><input type="date" id="data" required></label>
+        <label><span>Hora</span><input type="time" id="hora" required></label>
+        <label><span>Serviço</span>
+          <select id="servicoEscolhido">
+            <option>Troca de Pneu</option>
+            <option>Remendos</option>
+            <option>Troca de Câmara</option>
+            <option>Atendimento Móvel</option>
+          </select>
+        </label>
+        <label class="full"><span>Observações</span><textarea id="obs" rows="3"
+            placeholder="Ex: local do veículo, portas de acesso"></textarea></label>
+        <div class="form-actions full">
+          <button type="submit" class="btn">Enviar pedido</button>
+          <div id="msg" class="msg muted"></div>
+        </div>
+      </form>
+      <p class="note muted small">Ao enviar, você será redirecionado ao WhatsApp para confirmar o agendamento.</p>
+    </section>
+
+    <section id="contato" class="container card section">
+      <h3>Localização</h3>
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.726197299327!2d-34.9436494!3d-8.129333500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1e0c272fb2eb%3A0x91d0f6d0787ad60f!2sR.%20Srg.%20Coriolando%20Santiago%2C%20100%20-%20Ibura%2C%20Recife%20-%20PE%2C%2051240-760!5e0!3m2!1spt-BR!2sbr!4v1762364749829!5m2!1spt-BR!2sbr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="ano"></span> Du-Black Borracharia. Criado por edinho_rodrigues27</p>
+    </div>
+  </footer>
+
+  <a id="whatsappFloat" class="whatsapp-fixed" href="#" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="#111">
+      <path
+        d="M20.5 3.5A11.9 11.9 0 0012 0C5.373 0 .001 5.373 0 12c0 2.115.557 4.093 1.613 5.86L0 24l6.341-1.662A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12 0-1.7-.325-3.315-.95-4.8z" />
+    </svg>
+    <span>Chamar</span>
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
