@@ -131,3 +131,186 @@ nav{display:flex;align-items:center;gap:1rem}
   .localizacao-container{flex-direction:column}
   .mapa iframe{height:250px}
 }
+
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* altura padrão no desktop */
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsivo para celular */
+@media (max-width: 768px) {
+  .map-container {
+    height: 300px; /* aumenta ou ajusta conforme o visual desejado */
+  }
+}
+
+/* ======== MAPA - AJUSTE RESPONSIVO ======== */
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* altura padrão no desktop */
+  border-radius: 15px; /* arredonda os cantos */
+  overflow: hidden; /* impede o mapa de "vazar" do contorno arredondado */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* opcional: adiciona uma sombra suave */
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 20px; /* mantém o arredondamento no iframe */
+}
+
+/* Responsivo para celular */
+@media (max-width: 768px) {
+  .map-container {
+    height: 300px;
+    border-radius: 12px;
+  }
+}
+
+/* ======== BOTÃO NEON - DU-BLACK BORRACHARIA ======== */
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 12px 30px;
+  background: transparent;
+  border: 2px solid #fdd835; /* amarelo vibrante */
+  color: #fdd835;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #fdd835, 0 0 20px #fdd835 inset; /* brilho interno e externo */
+}
+
+/* Efeito ao passar o mouse */
+.btn:hover {
+  background: #fdd835;
+  color: #000;
+  box-shadow: 0 0 20px #fdd835, 0 0 40px #fdd835, 0 0 60px #fdd835;
+  transform: scale(1.05);
+}
+
+/* ======== ANIMAÇÃO NEON GERAL ======== */
+@keyframes neonPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px var(--neon-color), 0 0 20px var(--neon-color) inset;
+  }
+  50% {
+    box-shadow: 0 0 20px var(--neon-color), 0 0 40px var(--neon-color) inset;
+  }
+}
+
+/* ======== BOTÃO NEON AMARELO PADRÃO ======== */
+.btn {
+  --neon-color: #fdd835; /* amarelo vibrante */
+  position: relative;
+  display: inline-block;
+  padding: 12px 30px;
+  background: transparent;
+  border: 2px solid var(--neon-color);
+  color: var(--neon-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: neonPulse 3s infinite alternate;
+}
+
+/* Efeito ao passar o mouse */
+.btn:hover {
+  background: var(--neon-color);
+  color: #000;
+  box-shadow: 0 0 25px var(--neon-color), 0 0 50px var(--neon-color), 0 0 80px var(--neon-color);
+  transform: scale(1.05);
+}
+
+/* ======== BOTÃO WHATSAPP - NEON VERDE ======== */
+.btn-whatsapp {
+  --neon-color: #25d366; /* verde WhatsApp */
+  border: 2px solid var(--neon-color);
+  color: var(--neon-color);
+  animation: neonPulse 2s infinite alternate;
+}
+
+/* Hover especial para WhatsApp */
+.btn-whatsapp:hover {
+  background: var(--neon-color);
+  color: #000;
+  box-shadow: 0 0 25px var(--neon-color), 0 0 50px var(--neon-color), 0 0 80px var(--neon-color);
+}
+
+/* ======== RESPONSIVIDADE PARA CELULARES ======== */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    text-align: center;
+  }
+
+  header, section, footer {
+    padding: 20px 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .btn {
+    width: 90%;
+    max-width: 320px;
+    font-size: 1rem;
+    padding: 12px;
+    margin: 10px auto;
+    display: block;
+  }
+
+  iframe {
+    width: 100%;
+    height: 300px; /* garante que o mapa ocupe o container */
+    border-radius: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .container, .section-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
