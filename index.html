@@ -16,7 +16,7 @@
   <script src="https://kit.fontawesome.com/a2d9b5f0b1.js" crossorigin="anonymous" defer></script>
 
   <!-- Estilos -->
-  <link rel="stylesheet" href="style-v2.css?v=1.0.0">
+  <link id="css-dynamic" rel="stylesheet" href="">
   <script src="script-v2.js?v=1.0.0" defer></script>
 
 </head>
@@ -211,6 +211,13 @@
     </footer>
 
   </main>
+<script>
+  // Gera uma versão única baseada na data e hora atual
+  const version = new Date().getTime();
+
+  // Seleciona o elemento link e atualiza o href com o número de versão
+  document.getElementById('css-dynamic').href = `style-v2.css?v=${version}`;
+</script>
 
 </body>
 
