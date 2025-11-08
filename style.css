@@ -314,3 +314,554 @@ nav{display:flex;align-items:center;gap:1rem}
     margin: 0 auto;
   }
 }
+.form-section {
+  background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+  color: #f1f1f1;
+  padding: 50px 20px;
+  border-top: 3px solid #ffcc00;
+  border-bottom: 3px solid #ffcc00;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.titulo {
+  font-size: 2em;
+  font-weight: 700;
+  color: #ffcc00;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+
+.subtitulo {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #111;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.1);
+  border: 1px solid #2a2a2a;
+}
+
+.form-container label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  color: #ffcc00;
+  font-weight: 600;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.form-container input:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+  outline: none;
+  border-color: #ffcc00;
+  box-shadow: 0 0 8px #ffcc00;
+}
+
+textarea {
+  resize: none;
+  min-height: 80px;
+}
+
+.btn-whatsapp {
+  width: 100%;
+  background: #25D366;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(37, 211, 102, 0.5);
+}
+
+.btn-whatsapp:hover {
+  background: #1eb15a;
+  transform: scale(1.03);
+}
+
+.btn-whatsapp i {
+  margin-right: 8px;
+}
+/* ==== LOGO BLACK GARAGE ==== */
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ffcc00, #b38f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(255, 204, 0, 0.4);
+  padding: 8px 12px;
+  border-radius: 10px;
+  display: inline-block;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 25px rgba(255, 204, 0, 0.8);
+}
+
+/* Efeito de brilho contínuo */
+@keyframes brilho {
+  0%, 100% { text-shadow: 0 0 8px rgba(255, 204, 0, 0.3); }
+  50% { text-shadow: 0 0 20px rgba(255, 204, 0, 0.8); }
+}
+
+.logo {
+  animation: brilho 3s infinite alternate;
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 600px) {
+  .logo {
+    font-size: 1.8rem;
+  }
+}
+/* ===== LOGO BLACK GARAGE COM EFEITO METÁLICO ===== */
+.logo-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(135deg, #d4af37 0%, #f7e98e 25%, #a37e00 50%, #f7e98e 75%, #d4af37 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: metal-brilho 5s linear infinite;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.4), 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Animação de brilho correndo sobre o texto */
+@keyframes metal-brilho {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: 0 center;
+  }
+}
+
+/* Reflexo sutil no fundo (opcional) */
+.logo-text::after {
+  content: "BLACK GARAGE";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #999 0%, #eee 25%, #555 50%, #eee 75%, #999 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scaleY(-1);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+/* Slogan */
+.slogan {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: -5px;
+  letter-spacing: 1px;
+}
+
+
+.slogan {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: -5px;
+  letter-spacing: 1px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+}
+
+.header-inner {
+  background-color: #000;
+}
+
+@media (max-width: 600px) {
+  .logo-text {
+    font-size: 1.8rem;
+  }
+}
+/* === ESTILO BLACK GARAGE - DOURADO METÁLICO === */
+
+.brand {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+  z-index: 2;
+}
+
+/* Nome principal (BLACK GARAGE) com reflexo metálico */
+.logo {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  background: linear-gradient(
+    180deg,
+    #fff8c6 0%,
+    #ffdf00 25%,
+    #ffd000 50%,
+    #b38f00 75%,
+    #fff3b0 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 3px;
+  text-shadow:
+    0 0 8px rgba(255, 215, 0, 0.6),
+    0 0 20px rgba(255, 255, 150, 0.4);
+  animation: brilhoOuroMetal 4s infinite ease-in-out alternate;
+  position: relative;
+  z-index: 3;
+}
+
+/* Reflexo metálico em movimento */
+.logo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 30%,
+    transparent 60%
+  );
+  animation: reflexoMetal 5s infinite;
+}
+
+@keyframes reflexoMetal {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Brilho suave */
+@keyframes brilhoOuroMetal {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+  }
+  50% {
+    text-shadow: 0 0 30px rgba(255, 255, 200, 1);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+  }
+}
+
+/* Slogan */
+.slogan {
+  font-size: 1rem;
+  background: linear-gradient(90deg, #ddd, #fff, #bbb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+  margin-top: -5px;
+}
+
+/* Brilho dourado de fundo */
+.brand::before {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: -10%;
+  width: 160%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(255, 223, 0, 0.3), rgba(255, 166, 0, 0.1), transparent 80%);
+  filter: blur(35px);
+  z-index: 1;
+  animation: pulsarDourado 5s infinite ease-in-out;
+}
+
+@keyframes pulsarDourado {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .logo {
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+  }
+  .slogan {
+    font-size: 0.8rem;
+  }
+  .brand::before {
+    width: 130%;
+    height: 120%;
+  }
+}
+/* === Animação de entrada do header === */
+
+.header-inner {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: headerEntrada 1.2s ease forwards;
+}
+
+@keyframes headerEntrada {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animação individual do nome */
+.logo {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: logoEntrada 1.5s ease forwards 0.3s; /* 0.3s de delay */
+}
+
+@keyframes logoEntrada {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+    text-shadow: none;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    text-shadow: 0 0 15px rgba(255, 200, 0, 0.9);
+  }
+}
+
+/* Slogan entra suavemente depois */
+.slogan {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: sloganEntrada 1.2s ease forwards 1s; /* entra depois da logo */
+}
+
+@keyframes sloganEntrada {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* === Reflexo metálico periódico na logo === */
+
+.logo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.6) 40%,
+    transparent 80%
+  );
+  animation: flashReflexo 6s ease-in-out infinite;
+  animation-delay: 3s; /* primeiro reflexo após 3s */
+}
+
+@keyframes flashReflexo {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  40% {
+    left: 100%;
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+/* ====== FORMULÁRIO BLACK GARAGE ====== */
+.form-section {
+  padding: 60px 20px;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #ffd700;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #222;
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #ffd700;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+/* ====== BOTÃO COM EFEITO DOURADO ====== */
+.btn-whatsapp {
+  width: 100%;
+  margin-top: 20px;
+  background: linear-gradient(90deg, #ffd700, #b8860b);
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 14px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-whatsapp::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: skewX(-20deg);
+  transition: 0.5s;
+}
+
+.btn-whatsapp:hover::before {
+  left: 100%;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
+
+/* ====== ALERTA DOURADO ====== */
+#alerta {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, #b8860b, #ffd700, #b8860b);
+  color: #000;
+  font-weight: 600;
+  padding: 14px 24px;
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+  opacity: 0;
+  z-index: 1000;
+  transition: all 0.4s ease;
+}
+
+.alerta-visivel {
+  opacity: 1;
+  top: 30px;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  .btn-whatsapp {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+}
+
